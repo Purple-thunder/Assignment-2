@@ -305,8 +305,8 @@ div.orderPizza > div:first-child > h2
 
 div.orderPizza > div:first-child > button 
 {
-    background-color: #fff;
-    color: #ff5a5f;
+    background-color: #ff5a5f;
+    color: #efefef;
     border: none;
     padding: 8px 16px;
     font-size: 18px;
@@ -490,6 +490,10 @@ section.pizzaTypes > div > div:last-child
     display: none;
 }
 
+div.pizzaOffers > div:last-child > button:hover
+{
+    background-color: #d36446;
+}
 /* ------- css for footer section of the website-------- */
 footer.footer 
 {
