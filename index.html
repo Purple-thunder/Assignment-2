@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Have best pizza here at pizza place">
+        <meta name="robots" content="nofollow, noindex">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pizza Place</title>
+
+        <!-- linking external jquery to the html -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        
+        <!-- linking external css to the html  -->
+        <link rel="stylesheet" href="./CSS/style.css">
+
+        <!-- linking external javascript to the html -->
+        <script type="text/javascript" src="./JavaScript/script.js"></script>
+
+        <!-- linking external fonts style to html -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- This is header section for the website -->
+        <header id="header"></header>
+        
+        <!-- Introduction and pizza description -->
+        <!-- html for pizza picture and background blur -->
+        <section class="introPicture"></section>
+        <section class="introduction">
+            <div>
+                <h1>Welcome to Pizza Place</h1>
+            </div>
+            <div>
+                <p>Experience the perfect balance of crispy crusts, savory sauces, and a blend of cheeses that leave you craving for more.</p>
+                <p>Join us and celebrate the timeless allure of pizza – a true comfort food that knows no bounds.</p>
+            </div>
+            <div>
+                <a href="form.html">Order Now</a>
+            </div>
+        </section>
+
+        <!-- This is main section for the website -->
+        <main class="main">
+          
+            <section class="pizzaOffers">
+                <h2>Today's Offers</h2>
+                <div>
+                  <!-- Offer 1 -->
+                  <div class="pizzaOffers">
+                      <div class="offerImage">
+                        <img src="./img/pizza4.png" alt="Pizza Offer 1">
+                      </div>
+                      <div>
+                        <h3>50% Off</h3>
+                      </div>
+                      <div>
+                          <p>Buy two medium pizzas with three toppings of your choice and get 50% off on the total bill.</p>
+                      </div>
+                      <div>
+                          <p>Promo Code: <span class="promoCode">PIZZA50</span></p>
+                          <button class="promoCode1" onclick="copyCode('PIZZA50','promoCode1')">Copy Code</button>
+                    </div>
+                  </div>
+              
+                  <!-- Offer 2 -->
+                  <div class="pizzaOffers">
+                      <div class="offerImage">
+                          <img src="./img/pizza_slice.jpg" alt="Pizza Offer 2">
+                      </div>
+                      <div>
+                          <h3>Family Combo</h3>
+                      </div>
+                      <div>
+                        <p>Grab our Family Combo for only $25: one large pizza, garlic bread, salad, and a 2-liter soda.</p>
+                      </div>
+                    <div>
+                          <p>Promo Code: <span class="promoCode">PIZZFAM</span></p>
+                          <button class="promoCode2" onclick="copyCode('PIZZAFAM','promoCode2')">Copy Code</button>
+                    </div>
+                  </div>
+              
+                  <!-- Offer 3 -->
+                  <div class="pizzaOffers">
+                      <div class="offerImage">
+                        <img src="./img/pizza1.png" alt="Pizza Offer 1">
+                      </div>
+                      <div>
+                        <h3>Student Special</h3>
+                      </div>
+                      <div>
+                        <p>Calling all students! Get a 25% discount on any personal pizza with a valid student ID.</p>
+                      </div>
+                      <div>
+                        <p>Promo Code: <span class="promoCode">PIZZASTU</span></p>
+                        <button class="promoCode3" onclick="copyCode('PIZZASTU','promoCode3')">Copy Code</button>
+                      </div>
+                    </div>
+                    
+                    <!-- Offer 4 -->
+                    <div class="pizzaOffers">
+                        <div class="offerImage">
+                          <img src="./img/pizza4_replace.png" alt="Pizza Offer 1">
+                        </div>
+                        <div>
+                          <h3>Refer-a-Friend</h3>
+                        </div>
+                        <div>
+                          <p>Refer a friend to Pizza Place and both of you will get a 20% discount on your next orders.</p>
+                        </div>
+                        <div>
+                            <p>Promo Code: <span class="promoCode">PIZZAFRI</span></p>
+                            <button class="promoCode4" onclick="copyCode('PIZZAFRI','promoCode4')">Copy Code</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Offer 5 -->
+                    <div class="pizzaOffers">
+                      <div class="offerImage">
+                        <img src="./img/pizza3.jpg" alt="Pizza Offer 1">
+                      </div>
+                      <div>
+                        <h3>Online Order Bonus</h3>
+                      </div>
+                      <div>
+                        <p>Order online and customize your pizza with unlimited toppings for no extra charge!</p>
+                      </div>
+                      <div>
+                        <p>Promo Code: <span class="promoCode">PIZZAONL</span></p>
+                        <button class="promoCode5" onclick="copyCode('PIZZAONL','promoCode5')">Copy Code</button>
+                      </div>
+                    </div>
+                    
+                    <!-- Offer 6 -->
+                    <div class="pizzaOffers">
+                      <div class="offerImage">
+                        <img src="./img/pizza2.png" alt="Pizza Offer 1">
+                      </div>
+                      <div>
+                        <h3>Weekend Treat</h3>
+                      </div>
+                      <div>
+                        <p>Enjoy our Weekend Treat: two large pizzas, chicken wings, and a dessert for just $30.</p>
+                      </div>
+                      <div>
+                          <p>Promo Code: <span class="promoCode">PIZZAEND</span></p>
+                          <button class="promoCode6" onclick="copyCode('PIZZAEND','promoCode6')">Copy Code</button>
+                      </div>
+                  </div>
+                </div>
+              </section>
+
+        </main>
+
+        <!-- This is footer for the website -->
+        <footer class="footer"></footer>         
+    </body>
+</html>
