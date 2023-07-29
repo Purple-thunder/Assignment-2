@@ -634,7 +634,7 @@ footer.footer > div:last-child
     /* ------- pizza offers -------- */
     div.pizzaOffers
     {
-        max-width: 48%;
+        max-width: 90%;
     }
     div.pizzaOffers:nth-child(4) > div > img 
     {
