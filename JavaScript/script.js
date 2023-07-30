@@ -52,7 +52,7 @@ $(document).ready(function ()
     });
 
     // This array will store pizza orders in the cart
-    const cartItems = []; 
+    var cartItems = []; 
   
     // This function will add the selected pizza to the cart
     $('#addToCart').click(function(event)
@@ -74,6 +74,8 @@ $(document).ready(function ()
       $('input[name="toppings[]"]:checked').each(function() {
         toppings.push($(this).val());
       });
+
+      // quantity will be parsed to int with base 10
       var quantity = parseInt($('#quantity').val(), 10);
   
       // this wll create a pizza object with the customization details
@@ -112,7 +114,8 @@ $(document).ready(function ()
       const cartList = $('#cartItems');
       // Clear the previous cart items
       cartList.empty(); 
-  
+      
+      // foreach loop will iterate throught all the orders in cart items and add it to ul
       cartItems.forEach((pizza) => {
         cartList.append(`<li>${pizza.size} - ${pizza.crustType} - ${pizza.sauce} - ${pizza.toppings.join(', ')} - Quantity: ${pizza.quantity}</li>`);
       });
@@ -121,10 +124,11 @@ $(document).ready(function ()
     // this function will place pizza order if form is valid
     $("#submitOrderBtn").click(function() 
     {
-      var name = $("#name").val();
       var address = $("#address").val();
       var phone = $("#phone").val();
+      var name = $("#name").val();
       
+      // to check wether pizza is added to cart or not
       if($("#cartItems").children().length === 0)
       {
         alert("select the pizza first");
