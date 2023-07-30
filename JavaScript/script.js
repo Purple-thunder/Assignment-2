@@ -97,6 +97,7 @@ $(document).ready(function ()
     
     // this function will print individual pizza name
     $("section.pizzaTypes > div > div:nth-child(2) > div:nth-child(4) > button").click(function(){
+      
       $('#cartItems').append('<li> Veggie delight </li>');
     });
 
@@ -112,13 +113,12 @@ $(document).ready(function ()
     function displayCart() 
     {
       const cartList = $('#cartItems');
-      // Clear the previous cart items
-      cartList.empty(); 
-      
       // foreach loop will iterate throught all the orders in cart items and add it to ul
       cartItems.forEach((pizza) => {
         cartList.append(`<li>${pizza.size} - ${pizza.crustType} - ${pizza.sauce} - ${pizza.toppings.join(', ')} - Quantity: ${pizza.quantity}</li>`);
       });
+
+      cartItems = [];
     }
       
     // this function will place pizza order if form is valid
