@@ -7,6 +7,8 @@ function copyCode(text,code)
   // this will display Copied after text is copied to clipboard
   var copyButton = document.querySelector('button.'+code);
   copyButton.innerText = 'Copied!';
+
+  // This function will change button text back after 1second copy code 
   setTimeout(function() 
   {
     copyButton.innerText = 'Copy Code';
